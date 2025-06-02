@@ -39,31 +39,16 @@ Billetera_ICP/
    ```bash
    npm install
    dfx start --background --clean
+
+   //Desplegar canister 
    dfx deploy
-Desplegar los canisters
 
-bash
-Copiar
-Editar
-dfx deploy
-Esto compilará y desplegará tus canisters localmente.
+   //Iniciar el servidor frontend
+   cd CA-frontend
+   npm start
 
-Iniciar el servidor frontend
-
-bash
-Copiar
-Editar
-cd CA-frontend
-npm start
 El frontend estará disponible en http://localhost:8080.
-
-📚 Documentación útil
-Guía rápida de desarrollo en ICP
-
-Documentación de Motoko
-
-Internet Identity
-
+   
 💡 Notas finales
 Asegúrate de ejecutar npm run generate cuando hagas cambios en tu backend.
 
