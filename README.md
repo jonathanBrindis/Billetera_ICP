@@ -19,10 +19,6 @@ Billetera_ICP/
 └── .dfx/ # Archivos temporales generados por dfx
 
 
-yaml
-Copiar
-Editar
-
 ---
 
 ## 🚀 Tecnologías usadas
