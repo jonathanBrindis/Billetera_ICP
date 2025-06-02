@@ -1,4 +1,4 @@
-import { createActor, canisterId } from "../../declarations/Z3-VB-backend";
+import { createActor, canisterId } from "../../declarations/CA-backend";
 import { HttpAgent } from "@dfinity/agent";
 import {AuthClient} from "@dfinity/auth-client"
 import { useState } from "react";
@@ -70,6 +70,7 @@ async function handleAuthenticated(authClient) {
       <div>
         <h1 style={{color:'white', fontFamily: 'cursive', textAlign:'center', paddingTop: 80}}> Bienvenido{log? " de nuevo!": ", porfavor inicia sesión!"}</h1>
       </div>
+      
       { log && <Transfer 
         authClient = {authClient}
         actor = {actor}

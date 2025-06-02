@@ -11,5 +11,8 @@ module Types {
         balance:Nat;
         agenda: [Principal];
         transacciones: [Text];
+
     }
+
+    
 }
