@@ -38,7 +38,8 @@ Billetera_ICP/
 
    ```bash
    npm install
-   dfx start --background
+   dfx start --background --clean
+   dfx deploy
 Desplegar los canisters
 
 bash
