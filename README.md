@@ -7,11 +7,17 @@ Bienvenido a **Billetera ICP**, una aplicación web descentralizada construida s
 ## 📁 Estructura del Proyecto
 
 Billetera_ICP/
+
 ├── CA-backend/ # Lógica de la billetera en Motoko
+
 ├── CA-frontend/ # Interfaz desarrollada con React
+
 ├── dfx.json # Configuración de canisters
+
 ├── README.md # Este archivo
+
 └── .dfx/ # Archivos temporales generados por dfx
+
 
 yaml
 Copiar
@@ -54,33 +60,6 @@ cd CA-frontend
 npm start
 El frontend estará disponible en http://localhost:8080.
 
-📦 Estructura de canisters (dfx.json)
-json
-Copiar
-Editar
-{
-  "canisters": {
-    "CA-backend": {
-      "main": "src/CA-backend/main.mo",
-      "type": "motoko"
-    },
-    "Z3-VB-frontend": {
-      "dependencies": ["CA-backend"],
-      "source": ["src/CA-frontend/dist"],
-      "type": "assets",
-      "workspace": "CA-frontend"
-    },
-    "internet_identity": {
-      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
-      "frontend": {},
-      "remote": {
-        "id": { "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai" }
-      },
-      "type": "custom",
-      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
-    }
-  }
-}
 📚 Documentación útil
 Guía rápida de desarrollo en ICP
 
